@@ -16,11 +16,11 @@ There are 5 operations for each row with calls input. The rest of the operations
 
 
 ### Task3
-**O(n^2)**
-While printing each area code in the local_call_percentage() function, we are also sorting which has a O(n^2) worst case time complexity.
+**O(n long(n))**
+While printing each area code in the local_call_percentage() function, we are also sorting which has a O(n long(n)) worst case time complexity.
 
 
 ### Task4
-**O(n^2)**
-While printing the phone numbers in the find_telemarketers() function, we are also shorting which has a O(n^2) worst case time complexity.
+**O(n long(n))**
+While printing the phone numbers in the find_telemarketers() function, we are also shorting which has a O(n long(n)) worst case time comple
 

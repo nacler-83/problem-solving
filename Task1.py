@@ -22,14 +22,18 @@ def unique_numbers(texts, calls):
     numbers appended to it from the calls and texts dataset. Then prints the
     number of unique phone numbers in the collection.
     """
-    collection = []
+    d = {}
     for rows in texts:
-        collection.append(rows[0])
-        collection.append(rows[1])
+        if rows[0] not in d:
+            d[rows[0]] = 1
+        if rows[1] not in d:
+            d[rows[1]] = 1
     for rows in calls:
-        collection.append(rows[0])
-        collection.append(rows[1])
-    count = len(set(collection))
+        if rows[0] not in d:
+            d[rows[0]] = 1
+        if rows[1] not in d:
+            d[rows[1]] = 1
+    count = len(d)
     result = f'There are {count} different telephone numbers in the records.'
     print(result)
 
